@@ -12,8 +12,11 @@ Stampare un messaggio appropriato in base all'esito del controllo.
 1. Creare un array di email autorizzate.
 2. Chiedere all'utente di inserire la sua email.
 3. Controllare se l'email inserita è nell'array delle email autorizzate.
-4. Stampare un messaggio di accesso consentito/negato all'utente.
-
+   Se autorizzata, 
+      stampare messaggio di benvenuto e portarlo alla pagina del gioco
+   Altrimenti
+      stampare un messaggio di accesso negato all'utente.
+  
 ## 2: Gioco dei dadi
 
 ### Obiettivo
