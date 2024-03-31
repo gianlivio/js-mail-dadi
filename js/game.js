@@ -27,17 +27,21 @@ rollButton.addEventListener('click', function() {
     // ciclo for per determinare il rollResult
 
     let messRisultato;
+    let coloreSfondo;
     if (tiroUtente > tiroComputer) {
-        messRisultato = "Hai vinto";
+        messRisultato = "Hai vinto!";
+        coloreSfondo = "rgba(144, 238, 144, 0.5)";
     } else if (tiroUtente < tiroComputer) {
         messRisultato = "Hai perso.";
+        coloreSfondo = "rgba(255, 99, 71, 0.5)";
     } else {
-        messRisultato = "Pareggio!";
+        messRisultato = "Pareggio..";
+        coloreSfondo = "rgba(255, 165, 0, 0.5)";
     }
 
     // Visualizzazione del rollResult
     
     rollResult.innerHTML = `Tu: ${tiroUtente} - Computer: ${tiroComputer}. ${messRisultato}`;
-        
+    rollResult.style.backgroundColor = coloreSfondo;    
 
 });
